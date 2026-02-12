@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark light;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Home.css - ESTILO CORREGIDO */
+
+.home-container {
+  /* 1. ANCHO COMPLETO (Adiós bordes grises) */
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  /* Configuración del fondo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  
+  /* Alineación */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px; /* Espacio arriba para el título */
+}
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.tiers-grid {
+  /* 2. EN FILA (Adiós columna) */
+  display: flex;
+  flex-direction: row;     /* Obliga a ir en horizontal */
+  flex-wrap: wrap;         /* Si no caben, bajan de línea ordenados */
+  justify-content: center; /* Centrados en la pantalla */
+  gap: 20px;               /* Espacio entre tarjetas */
+  
+  width: 100%;
+  padding: 20px;
+}
+
+/* Estilo simple de tarjeta */
+.tier-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #444;
+  text-align: center;
+  color: white;
+  width: 300px; /* Ancho fijo para que todas sean iguales */
+}
+
+.tier-card h2 {
+  margin-top: 0;
+}
+
+/* Estilo del botón */
+.enter-btn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#root {
+  max-width: 100%;  /* Antes seguro ponía 1280px */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: left; /* Por defecto a veces viene centrado, lo quitamos */
+}

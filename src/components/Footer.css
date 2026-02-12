@@ -1,0 +1,84 @@
+/* Esto afecta a la estructura global de tu página */
+#root, .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Obliga a la web a medir todo el alto de la pantalla */
+  margin: 0;
+}
+
+/* Esta es la clave: el contenido principal crece y empuja al footer */
+main, .main-content {
+  flex: 1;
+}
+
+/* Elimina márgenes rebeldes del navegador */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  width: 100%;       /* Ocupa todo el ancho disponible */
+  background-color: #121212;
+  color: #b0b0b0;
+  padding: 40px 0 20px 0;
+  margin-top: auto;  /* Refuerza que se vaya al fondo */
+}
+
+.footer-container {
+  max-width: 1200px; /* El contenido se queda centrado */
+  margin: 0 auto;    /* Centra el bloque de texto */
+  padding: 0 20px;
+  display: flex;         /* Activa el modo flexible */
+  flex-direction: row;   /* Alinea los hijos en fila */
+  justify-content: space-between; /* Deja espacio uniforme entre columnas */
+  align-items: flex-start; /* Alinea los textos arriba */
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+}
+
+.footer-section h3, .footer-section h4 {
+  color: #ffffff; 
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  display: flex;       
+  flex-direction: row;  /* Los pone en fila */
+  
+  /* ESTA ES LA CLAVE QUE TE FALTA: */
+  justify-content: center; /* Centra los elementos horizontalmente para alinearse con el título */
+  
+  list-style: none;     
+  padding: 0;           
+  margin: 0;            
+  gap: 20px;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #888888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #ffffff; 
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #333333; 
+  font-size: 0.9rem;
+}
+

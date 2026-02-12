@@ -1,0 +1,80 @@
+.privacy-container {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 80vh;
+  color: #e0e0e0;
+}
+
+/* HEADER */
+.privacy-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.privacy-header h1 {
+  font-size: 3rem;
+  color: #4a90e2; /* Azul competitivo */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.privacy-header p {
+  color: #b0b0b0;
+  font-size: 1.2rem;
+}
+
+/* SECCIONES */
+.privacy-section {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+}
+
+.privacy-section:hover {
+  border-color: #4a90e2;
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.15);
+}
+
+.privacy-section h2 {
+  color: #4a90e2;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.privacy-section p {
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+/* LISTAS */
+.privacy-section ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.privacy-section li {
+  margin-bottom: 8px;
+}
+
+/* LINKS */
+.privacy-container a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.privacy-container a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER / FECHA */
+.privacy-footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #888;
+}

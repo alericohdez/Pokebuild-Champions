@@ -1,0 +1,95 @@
+.tier-page-container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.tier-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.tier-header h1 {
+  font-size: 3rem;
+  color: #4a90e2; /* Azul competitivo */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.tier-header p {
+  color: #b0b0b0;
+  font-size: 1.2rem;
+}
+
+/* --- GRID DE POKEMON --- */
+.pokemon-grid {
+  display: grid;
+  /* Esto crea columnas automáticas que se ajustan al tamaño */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+/* TARJETA INDIVIDUAL */
+.pokemon-card {
+  background-color: #1e1e1e;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+  border-color: #4a90e2;
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+}
+
+.poke-sprite img {
+  width: 96px; /* Tamaño sprite clásico */
+  height: 96px;
+  image-rendering: pixelated; /* ¡Truco! Hace que los pixels se vean nítidos y no borrosos */
+}
+
+.poke-info h3 {
+  margin: 10px 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+/* ETIQUETAS DE TIPOS */
+.poke-types {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.type-badge {
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.normal { background: #A8A77A; }
+.fuego { background: #EE8130; }
+.agua { background: #6390F0; }
+.electrico { background: #F7D02C; }
+.planta { background: #7AC74C; }
+.hielo { background: #96D9D6; }
+.lucha { background: #C22E28; }
+.veneno { background: #A33EA1; }
+.tierra { background: #E2BF65; }
+.volador { background: #A98FF3; }
+.psiquico { background: #F95587; }
+.bicho { background: #A6B91A; }
+.roca { background: #B6A136; }
+.fantasma { background: #735797; }
+.dragon { background: #6F35FC; }
+.acero { background: #B7B7CE; }
+.siniestro { background: #705746; }
+.hada { background: #D685AD; }
