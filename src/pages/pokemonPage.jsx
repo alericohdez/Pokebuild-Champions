@@ -17,7 +17,7 @@ const PokemonPage = () => {
     if (pokemonData) break;
   }
 
-  const build = POKEMON_BUILDS[pokemonId];
+  const builds = POKEMON_BUILDS[pokemonId];
 
   if (!pokemonData) {
     return (
@@ -41,42 +41,55 @@ const PokemonPage = () => {
         ))}
       </div>
 
-      {build ? (
-        <div className="build-info" style={{ 
-          marginTop: "30px", 
-          backgroundColor: "#2a2a2a", 
-          padding: "20px", 
-          borderRadius: "12px",
-          display: "inline-block",
-          textAlign: "left",
-          border: "1px solid #444",
-          marginBottom: "50px"
+      {builds && builds.length > 0 ? (
+        <div style={{ 
+          display: "flex", 
+          flexWrap: "wrap", 
+          justifyContent: "center", 
+          gap: "20px",
+          marginTop: "30px",
+          marginBottom: "50px" 
         }}>
-          <h2 style={{ borderBottom: "1px solid #555", paddingBottom: "10px" }}>Build Competitiva</h2>
-          
-          <p><strong>Objeto:</strong> {build.item}</p>
-          <p><strong>Habilidad:</strong> {build.ability}</p>
-          <p><strong>Naturaleza:</strong> {build.nature}</p>
-          <p><strong>Tera Tipo:</strong> {build.teraType}</p>
-          <p><strong>EVs:</strong> {build.evs}</p>
-          
-          <h3 style={{ marginTop: "15px" }}>Movimientos:</h3>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            {build.moves.map((move, index) => (
-              <li key={index} style={{ 
-                background: "#3d3d3d", 
-                margin: "5px 0", 
-                padding: "8px 15px", 
-                borderRadius: "5px" 
-              }}>
-                {move}
-              </li>
-            ))}
-          </ul>
+          {builds.map((build, index) => (
+            <div key={index} className="build-info" style={{ 
+              backgroundColor: "#2a2a2a", 
+              padding: "20px", 
+              borderRadius: "12px",
+              textAlign: "left",
+              border: "1px solid #444",
+              width: "300px",
+              minWidth: "250px"
+            }}>
+              <h2 style={{ borderBottom: "1px solid #555", paddingBottom: "10px" }}>
+                {build.version || "Build"}
+              </h2>
+              
+              <p><strong>Objeto:</strong> {build.item}</p>
+              <p><strong>Habilidad:</strong> {build.ability}</p>
+              <p><strong>Naturaleza:</strong> {build.nature}</p>
+              <p><strong>Tera Tipo:</strong> {build.teraType}</p>
+              <p><strong>EVs:</strong> {build.evs}</p>
+              
+              <h3 style={{ marginTop: "15px" }}>Movimientos:</h3>
+              <ul style={{ listStyle: "none", padding: 0 }}>
+                {build.moves.map((move, idx) => (
+                  <li key={idx} style={{ 
+                    background: "#3d3d3d", 
+                    margin: "5px 0", 
+                    padding: "8px 15px", 
+                    borderRadius: "5px" 
+                  }}>
+                    {move}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
+        
       ) : (
         <div style={{ marginTop: "30px", color: "#aaa" }}>
-          <p>No hay una estrategia registrada para este Pokémon.</p>
+          <p>No hay estrategias registradas para este Pokémon.</p>
         </div>
       )}
     </div>

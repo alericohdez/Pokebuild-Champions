@@ -1,5 +1,7 @@
 // src/data/mockData.js
 
+import { version } from "react";
+
 export const TIERS_DATA = {
   ubers: {
     title: "Ubers",
@@ -199,54 +201,85 @@ export const TIERS_DATA = {
     ]
   }  
 };
-
 export const POKEMON_BUILDS = {
-  "colmillolargo": {
-    item: "Botas de Suela Dura",
-    ability: "Paleosíntesis",
-    nature: "Alegre",
-    evs: "252 Ata / 4 Def / 252 Vel",
-    moves: ["Arremetida", "A bocajarro", "Giro Rápido", "Pirueta Helada"],
-    teraType: "Agua"
-  },
-  "kingambit": {
-    item: "Globo Helio",
-    ability: "General Supremo",
-    nature: "Firme",
-    evs: "252 PS / 252 Ata / 4 Def",
-    moves: ["Genufendiente", "Golpe Bajo", "Cabeza de Hierro", "Danza Espada"],
-    teraType: "Fantasma"
-  },
-  "gholdengo": {
-    item: "Globo Helio",
-    ability: "Cuerpo Áureo",
-    nature: "Miedosa",
-    evs: "252 SpA / 4 SpD / 252 Vel",
-    moves: ["Fiebre Dorada", "Bola Sombra", "Brillo Mágico", "Recuperación"],
-    teraType: "Acero"
-  },
-  "electrofuria": {
-    item: "Restos",
-    ability: "Paleosíntesis",
-    nature: "Modesta",
-    evs: "252 PS / 252 SpA / 4 SpD",
-    moves: ["Electroclima", "Pulso Dragón", "Voltiocambio", "Paz Mental"],
-    teraType: "Eléctrico"
-  },
-  "dragapult": {
-    item: "Cinta Elección",
-    ability: "Cuerpo Puro",
-    nature: "Alegre",
-    evs: "252 Ata / 4 Def / 252 Vel",
-    moves: ["Draco-Flechas", "Golpe Fantasma", "Ida y Vuelta", "Golpe Bajo"],
-    teraType: "Dragón"
-  },
-  "gliscor": {
-    item: "Toxisfera",
-    ability: "Antídoto",
-    nature: "Agitada",
-    evs: "252 PS / 184 Def / 72 Vel",
-    moves: ["Terremoto", "Protección", "Tóxico", "Púas / Trampa rocas"],
-    teraType: "Agua"
-  },
+  "colmillolargo": [
+    {
+      item: "Botas de Suela Dura",
+      ability: "Paleosíntesis",
+      nature: "Alegre",
+      evs: "252 Ata / 4 Def / 252 Vel",
+      moves: ["Arremetida", "A bocajarro", "Giro Rápido", "Pirueta Helada"],
+      teraType: "Agua"
+    }
+  ],
+  "kingambit": [
+    {
+      item: "Globo Helio",
+      ability: "General Supremo",
+      nature: "Firme",
+      evs: "252 PS / 252 Ata / 4 Def",
+      moves: ["Genufendiente", "Golpe Bajo", "Cabeza de Hierro", "Danza Espada"],
+      teraType: "Fantasma"
+    }
+  ],
+  "gholdengo": [
+    {
+      item: "Globo Helio",
+      ability: "Cuerpo Áureo",
+      nature: "Miedosa",
+      evs: "252 SpA / 4 SpD / 252 Vel",
+      moves: ["Fiebre Dorada", "Bola Sombra", "Brillo Mágico", "Recuperación"],
+      teraType: "Acero"
+    }
+  ],
+  "electrofuria": [
+    {
+      item: "Restos",
+      ability: "Paleosíntesis",
+      nature: "Modesta",
+      evs: "252 PS / 252 SpA / 4 SpD",
+      moves: ["Electroclima", "Pulso Dragón", "Voltiocambio", "Paz Mental"],
+      teraType: "Eléctrico"
+    }
+  ],
+  "dragapult": [
+    {
+      item: "Cinta Elección",
+      ability: "Cuerpo Puro",
+      nature: "Alegre",
+      evs: "252 Ata / 4 Def / 252 Vel",
+      moves: ["Draco-Flechas", "Golpe Fantasma", "Ida y Vuelta", "Golpe Bajo"],
+      teraType: "Dragón"
+    }
+  ],
+  "gliscor": [
+    {
+      item: "Toxisfera",
+      ability: "Antídoto",
+      nature: "Agitada",
+      evs: "252 PS / 184 Def / 72 Vel",
+      moves: ["Terremoto", "Protección", "Tóxico", "Púas / Trampa rocas"],
+      teraType: "Agua"
+    }
+  ],
+  "garchomp": [
+    {
+      version: "Defensivo físico",
+      item: "Casco dentado",
+      ability: "Piel tosca",
+      nature: "Agitada",
+      evs: "252 PS / 4 Ata / 252 Def",
+      moves: ["Terremoto", "Cola dragón", "Trampa rocas", "Púas"],
+      teraType: "Acero"
+    },
+    {
+      version: "Atacante físico",
+      item: "Dado trucado",
+      ability: "Piel tosca",
+      nature: "Alegre",
+      evs: "252 Ata / 4 Def / 252 Vel",
+      moves: ["Terremoto", "Ráfaga escamas", "Danza espada", "Colmillo ígneo"],
+      teraType: "Dragón / Tierra"
+    }
+  ]
 };
