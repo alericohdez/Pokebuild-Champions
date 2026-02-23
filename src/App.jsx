@@ -7,10 +7,13 @@ import TierPage from './pages/tierPage';
 import './App.css';
 import PokemonPage from "./pages/pokemonPage";
 import PrivacyPolicy from "./pages/privacyPolicy";
+import { useEffect } from "react";
 
 
 function App() {
+   
   return (
+    
     <div className="app-container">
       <Header />
 
