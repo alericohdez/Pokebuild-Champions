@@ -25,6 +25,26 @@ The app is built with React and features a responsive design to ensure a good ex
 - Responsive layout for mobile and desktop.
 
 ## Getting Started
+
+Follow these instructions to set up and run the project locally on your machine.
+
+### Prerequisites
+
+Make sure you have installed the necessary tools to run the project:
+* Git
+* Node.js and npm
+
+### Installation
+
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/competitive-pokemon.git
+git clone [https://github.com/your-username/competitive-pokemon.git](https://github.com/your-username/competitive-pokemon.git)
+
+2. Navigate to the project directory:
+cd competitive-pokemon
+
+3. Install the dependencies:
+npm install
+
+4. Run the development server:
+npm start
