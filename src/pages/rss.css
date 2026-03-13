@@ -1,0 +1,34 @@
+.rss-page {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.rss-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.rss-text {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+/* BOTÓN */
+.rss-button {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #4a90e2;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.rss-button:hover {
+  background: #3d7cc5;
+  transform: translateY(-2px);
+}

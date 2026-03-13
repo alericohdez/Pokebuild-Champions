@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Pokebuild Champions</title>
+    <link>https://pokebuildchampions.com</link>
+    <description>Actualizaciones de tiers, builds competitivas y noticias del meta Pokémon</description>
+    <language>es-ES</language>
+    <lastBuildDate>Fri, 13 Mar 2026 12:00:00 GMT</lastBuildDate>
+
+    <item>
+      <title>Pokebuild Champions abre oficialmente</title>
+      <link>https://pokebuildchampions.com</link>
+      <description>La web de Pokebuild Champions ya está disponible con tiers competitivas y builds optimizadas.</description>
+      <pubDate>Fri, 13 Mar 2026 12:00:00 GMT</pubDate>
+      <guid>https://pokebuildchampions.com#news1</guid>
+    </item>
+
+    <item>
+      <title>Nueva sección OU añadida</title>
+      <link>https://pokebuildchampions.com/tier/ou</link>
+      <description>Ahora puedes consultar los mejores sets para el tier OU.</description>
+      <pubDate>Thu, 12 Mar 2026 15:30:00 GMT</pubDate>
+      <guid>https://pokebuildchampions.com#news2</guid>
+    </item>
+
+    <item>
+      <title>Tier UU actualizado</title>
+      <link>https://pokebuildchampions.com/tier/uu</link>
+      <description>Se han añadido builds competitivas y ajustes según el último meta.</description>
+      <pubDate>Wed, 11 Mar 2026 18:00:00 GMT</pubDate>
+      <guid>https://pokebuildchampions.com#news3</guid>
+    </item>
+
+    <item>
+      <title>Evento especial de torneo online</title>
+      <link>https://pokebuildchampions.com/news/tournament</link>
+      <description>Participa en el torneo mensual de Pokebuild Champions y demuestra tus habilidades competitivas.</description>
+      <pubDate>Tue, 10 Mar 2026 20:00:00 GMT</pubDate>
+      <guid>https://pokebuildchampions.com#news4</guid>
+    </item>
+
+    <item>
+      <title>Nuevo build destacado: Dragapult OU</title>
+      <link>https://pokebuildchampions.com/builds/dragapult-ou</link>
+      <description>Explora el set más competitivo de Dragapult para OU, con EVs, movimientos y estrategia detallada.</description>
+      <pubDate>Mon, 9 Mar 2026 14:00:00 GMT</pubDate>
+      <guid>https://pokebuildchampions.com#news5</guid>
+    </item>
+
+  </channel>
+</rss>

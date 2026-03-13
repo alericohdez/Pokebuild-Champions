@@ -8,6 +8,8 @@ import './App.css';
 import PokemonPage from "./pages/pokemonPage";
 import PrivacyPolicy from "./pages/privacyPolicy";
 import { useEffect } from "react";
+import RSS from "./pages/rss";
+
 
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
           <Route path="/tier/:tierId" element={<TierPage />} />
           <Route path="/pokemon/:pokemonId" element={<PokemonPage />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
+          <Route path="/rss" element={<RSS />} />
 
         </Routes>
       </main>
