@@ -34,6 +34,10 @@ Make sure you have installed the necessary tools to run the project:
 * Git
 * Node.js and npm
 
+## Firebase Hosting
+
+Our app is hosted at: [Pokebuild Champions](https://pokebuild-champions.firebaseapp.com/)
+
 ## RSS Feed
 
 This is PokeBuild Champions's feed watched from a feed reader:
