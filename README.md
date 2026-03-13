@@ -38,7 +38,8 @@ Make sure you have installed the necessary tools to run the project:
 
 This is PokeBuild Champions's feed watched from a feed reader:
 
-![PantallazoS del RSS Feed](./src/assets/rssMain.pngassets/rssMain.png)
+![Pantallazo del RSS Feed](screenshots/rssMain.png)
+
 
 ### Installation
 
