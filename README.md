@@ -39,12 +39,13 @@ Make sure you have installed the necessary tools to run the project:
 This is PokeBuild Champions's feed watched from a feed reader:
 
 ![Pantallazo del RSS Feed](screenshots/rssMain.png)
+![Pantallazo del RSS Feed](screenshots/rssNew.png)
 
 
 ### Installation
 
 1. Clone the repository:
-git clone [https://github.com/your-username/competitive-pokemon.git](https://github.com/your-username/competitive-pokemon.git)
+git clone [https://github.com/alericohdez/Pokebuild-Champions.git](https://github.com/alericohdez/Pokebuild-Champions.git)
 
 2. Navigate to the project directory:
 cd competitive-pokemon
