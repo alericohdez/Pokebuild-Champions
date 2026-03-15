@@ -19,7 +19,7 @@ export const TIERS_DATA = {
       { id: 1020, name: "Flamariete", types: ["Fuego", "Dragon"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/gougingfire.png" },
       { id: 956, name: "Espathra", types: ["Psiquico"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/espathra.png" },
       { id: 890, name: "Eternatus", types: ["Veneno", "Dragon"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/eternatus.png" },
-      { id: 987, name: "Melenalete", types: ["Fantasma", "Hada"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/fluttermane.png" },
+      { id: 987, name: "Melenaleteo", types: ["Fantasma", "Hada"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/fluttermane.png" },
       { id: 487, name: "Giratina", types: ["Fantasma", "Dragon"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/giratina.png" },
       { id: 487, name: "Giratina (Origen)", types: ["Fantasma", "Dragon"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/giratina-origin.png" },
       { id: 383, name: "Groudon", types: ["Tierra"], sprite: "https://play.pokemonshowdown.com/sprites/gen5/groudon.png" },

@@ -13,11 +13,11 @@ const PokemonPage = () => {
   const [builds, setBuilds] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // 🔎 filtros
+  // filtros
   const [selectedVersion, setSelectedVersion] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");
 
-  // 🔥 Leer desde Firebase
+  // Leer desde Firebase
   useEffect(() => {
     const fetchBuilds = async () => {
       try {
@@ -44,7 +44,7 @@ const PokemonPage = () => {
     fetchBuilds();
   }, [pokemonId]);
 
-  // 🔥 FILTRADO DINÁMICO (esto es lo que te da el 40%)
+  // FILTRADO DINÁMICO
   const filteredBuilds = builds.filter(build => {
     const matchesVersion =
       selectedVersion === "all" || build.version === selectedVersion;
@@ -70,7 +70,7 @@ const PokemonPage = () => {
     <div className="pokemon-page-container">
       <h1>Builds de {pokemonId}</h1>
       <img src={pokemonData.sprite} alt={pokemonData.name} style={{ width: "150px" }} />
-      {/* 🔽 FILTROS */}
+      {/* FILTROS */}
       <div className="filters-container">
         <select
           value={selectedVersion}
@@ -92,7 +92,7 @@ const PokemonPage = () => {
         />
       </div>
 
-      {/* 🔥 RESULTADOS */}
+      {/* RESULTADOS */}
       <div className="builds-grid">
         {filteredBuilds.map(build => (
           <div key={build.id} className="build-card">

@@ -1,67 +1,64 @@
-/* Esto afecta a la estructura global de tu página */
 #root, .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Obliga a la web a medir todo el alto de la pantalla */
+  min-height: 100vh;
   margin: 0;
 }
 
-/* Esta es la clave: el contenido principal crece y empuja al footer */
 main, .main-content {
   flex: 1;
 }
 
-/* Elimina márgenes rebeldes del navegador */
 body {
   margin: 0;
   padding: 0;
 }
 
 .footer {
-  width: 100%;       /* Ocupa todo el ancho disponible */
+  width: 100%;
   background-color: #121212;
   color: #b0b0b0;
   padding: 40px 0 20px 0;
-  margin-top: auto;  /* Refuerza que se vaya al fondo */
+  margin-top: auto;
 }
 
 .footer-container {
-  max-width: 1200px; /* El contenido se queda centrado */
-  margin: 0 auto;    /* Centra el bloque de texto */
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
-  display: flex;         /* Activa el modo flexible */
-  flex-direction: row;   /* Alinea los hijos en fila */
-  justify-content: space-between; /* Deja espacio uniforme entre columnas */
-  align-items: flex-start; /* Alinea los textos arriba */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .footer-section {
   flex: 1;
-  margin: 10px;
-  min-width: 200px;
+  min-width: 250px;
+  text-align: center;
 }
 
 .footer-section h3, .footer-section h4 {
-  color: #ffffff; 
-  margin-bottom: 15px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  margin: 0;
 }
 
 .footer-section ul {
-  display: flex;       
-  flex-direction: row;  /* Los pone en fila */
-  
-  /* ESTA ES LA CLAVE QUE TE FALTA: */
-  justify-content: center; /* Centra los elementos horizontalmente para alinearse con el título */
-  
-  list-style: none;     
-  padding: 0;           
-  margin: 0;            
-  gap: 20px;
-}
-
-.footer-section ul li {
-  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 12px;
 }
 
 .footer-section a {
@@ -71,14 +68,43 @@ body {
 }
 
 .footer-section a:hover {
-  color: #ffffff; 
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #b0b0b0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
 }
 
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid #333333; 
+  border-top: 1px solid #333333;
   font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import ForumCard from '../components/ForumCard';
 import './Home.css';
 import fotoFondo from '../assets/fotoFondo.jpg';
 
@@ -103,15 +104,12 @@ function Home() {
 
         <div className="forum-list">
           {filteredPosts.map(post => (
-            <div key={post.id} className="forum-card">
-              <h3>{post.pokemon} - <span>{post.category}</span></h3>
-              <p><strong>Por:</strong> {post.author}</p>
-              <p>{post.strategy}</p>
-              <div className="card-actions">
-                <button className="btn-edit" onClick={() => handleEdit(post)}>Editar</button>
-                <button className="btn-delete" onClick={() => handleDelete(post.id)}>Borrar</button>
-              </div>
-            </div>
+            <ForumCard 
+              key={post.id} 
+              post={post} 
+              onEdit={handleEdit} 
+              onDelete={handleDelete} 
+            />
           ))}
         </div>
       </section>

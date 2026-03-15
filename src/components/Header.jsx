@@ -26,7 +26,7 @@ const Header = () => {
 
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul>
-            <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
+            <li><Link to="/home" onClick={closeMenu}>Inicio</Link></li>
             <li><Link to="/tier/ubers" onClick={closeMenu}>Ubers</Link></li>
             <li><Link to="/tier/ou" onClick={closeMenu}>OU</Link></li>
             <li><Link to="/tier/uu" onClick={closeMenu}>UU</Link></li>
