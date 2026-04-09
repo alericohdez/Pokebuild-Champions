@@ -7,6 +7,7 @@ import TierPage from './pages/TierPage';
 import PokemonPage from './pages/PokemonPage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Rss from './pages/Rss';
+import { DataManager } from './components/DataManager';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/pokemon/:pokemonId" element={<PokemonPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/rss" element={<Rss />} />
+          <Route path="/datos" element={<DataManager />} />
         </Routes>
       </main>
       <Footer />

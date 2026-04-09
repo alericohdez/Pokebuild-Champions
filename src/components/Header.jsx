@@ -32,6 +32,7 @@ const Header = () => {
             <li><Link to="/tier/uu" onClick={closeMenu}>UU</Link></li>
             <li><Link to="/tier/ru" onClick={closeMenu}>RU</Link></li>
             <li><Link to="/rss" onClick={closeMenu}>RSS</Link></li>
+            <li><Link to="/datos" onClick={closeMenu}>Datos</Link></li>
           </ul>
         </nav>
       </div>

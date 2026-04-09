@@ -1,0 +1,60 @@
+.data-manager-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.data-manager-container section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #2a2a2a;
+  border-radius: 6px;
+}
+
+.data-manager-container h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #f1c40f;
+  border-bottom: 2px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+.data-manager-container button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.data-manager-container button:hover {
+  background-color: #2980b9;
+}
+
+.data-manager-container div {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-manager-container label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.data-manager-container input[type="file"] {
+  padding: 0.5rem;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fff;
+}
