@@ -54,6 +54,14 @@ npm run dev
 ## Firebase Hosting
 Our app is hosted at: [Pokebuild Champions](https://pokebuild-champions.firebaseapp.com/)
 
+## Import Examples
+
+To test the bulk import functionality of **PokebuildChampions**, you can download and use the following sample files:
+
+* [Sample in JSON format](/datos.json)
+* [Sample in CSV format](/datos.csv)
+* [Sample in XML format](/datos.xml)
+
 ## RSS Feed
 This is PokeBuild Champions's feed watched from a feed reader:
 
