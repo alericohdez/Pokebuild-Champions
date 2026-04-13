@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Logs
 logs
 *.log
@@ -27,3 +28,6 @@ node_modules/
 dist/
 .env
 .DS_Store
+=======
+/.idea
+>>>>>>> da7411210e2646ebe27319b9700140b175bf131e
