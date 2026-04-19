@@ -1,0 +1,18 @@
+<builds>
+    <build>
+        <id>ferropaladin-físico</id>
+        <nature>Alegre</nature>
+        <moves>
+            <move>Desarme</move>
+            <move>A bocajarro</move>
+            <move>Choque anímico</move>
+            <move>Psicocorte</move>
+        </moves>
+        <evs>252 Ata / 4 Def / 252 Vel</evs>
+        <pokemon>ferropaladin</pokemon>
+        <version>Físico</version>
+        <ability>Carga Cuark</ability>
+        <item>Energía potenciadora/Pañuelo elegido</item>
+        <teraType>Hada/Lucha</teraType>
+    </build>
+</builds>

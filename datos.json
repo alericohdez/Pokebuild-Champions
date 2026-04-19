@@ -1,0 +1,16 @@
+[{
+    "id": "ferropaladin-standard",
+    "item": "Energía potenciadora",
+    "pokemon": "ferropaladin",
+    "evs": "252 Spa / 4 Def / 252 Vel",
+    "moves": [
+      "Fuerza lunar",
+      "Rayo",
+      "Esfera aural",
+      "Paz mental"
+    ],
+    "ability": "Carga Cuark",
+    "teraType": "Hada",
+    "version": "Standard",
+    "nature": "Ingenua"
+  }]

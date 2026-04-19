@@ -1,0 +1,12 @@
+id	version	ability	nature	item	evs	teraType	moves	pokemon
+colmillolargo-standard	Standard	Paleosíntesis	Alegre	Botas gruesas	252 Ata / 4 Def / 252 Vel	Agua	Arremetida|A bocajarro|Giro Rápido|Pirueta Helada	colmillolargo
+deoxysvelocidad-standard	Standard	Presión	Tímida	Banda focus	252 Ata / 4 Def / 252 Vel	Siniestro	Trampa rocas|Púas|Onda trueno|Desarme	deoxysvelocidad
+dragapult-standard	Standard	Cuerpo Puro	Alegre	Cinta Elección	252 Ata / 4 Def / 252 Vel	Dragón	Draco-Flechas|Golpe Fantasma|Ida y Vuelta|Golpe Bajo	dragapult
+electrofuria-standard	Standard	Paleosíntesis	Modesta	Restos	252 PS / 252 SpA / 4 SpD	Eléctrico	Relámpago súbito|Pulso Dragón|Voltiocambio|Paz Mental	electrofuria
+garchomp-atacante-físico	Atacante físico	Piel tosca	Alegre	Dado trucado	252 Ata / 4 Def / 252 Vel	Dragón / Tierra	Terremoto|Ráfaga escamas|Danza espada|Colmillo ígneo	garchomp
+garchomp-defensivo-físico	Defensivo físico	Piel tosca	Agitada	Casco dentado	252 PS / 4 Ata / 252 Def	Acero	Terremoto|Cola dragón|Trampa rocas|Púas	garchomp
+garchomp-pañuelo-elegido	Pañuelo elegido	Piel tosca	Alegre	Pañuelo elegido	252 Ata / 4 SpD / 252 Vel	Dragón / Tierra / Agua	Garra dragón|Terremoto|Roca afilada / Avalancha|Hidroariete	garchomp
+gholdengo-standard	Standard	Cuerpo Áureo	Miedosa	Globo Helio	252 SpA / 4 SpD / 252 Vel	Acero	Fiebre Dorada|Bola Sombra|Brillo Mágico|Recuperación	gholdengo
+gliscor-standard	Standard	Antídoto	Agitada	Toxisfera	252 PS / 184 Def / 72 Vel	Agua	Terremoto|Protección|Tóxico|Púas / Trampa rocas	gliscor
+kingambit-standard	Standard	General supremo	Firme	Globo helio	252 PS / 252 Ata / 4 Def	Fantasma	Genufendiente|Golpe Bajo|Cabeza de Hierro|Danza Espada	kingambit
+kyurem-scarf	Scarf	Presión	Modesta	Pañuelo elegido	4 PS / 252 Spa / 252 Vel	Dragón / Tierra	Rayo hielo / Ventisca|Cometa draco|Liofilización|Tierra viva	kyurem
