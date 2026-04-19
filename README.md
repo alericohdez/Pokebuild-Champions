@@ -60,7 +60,13 @@ To test the bulk import functionality of **PokebuildChampions**, you can downloa
 
 * [Sample in JSON format](/datos.json)
 * [Sample in CSV format](/datos.csv)
+* [Sample in TSV format](/datos.tsv)
 * [Sample in XML format](/datos.xml)
+* [Sample in Excel (XLSX) format](/datos.xlsx)
+* [Sample in Excel Legacy (XLS) format](/datos.xls)
+* [Sample in OpenDocument Spreadsheet (ODS) format](/datos.ods)
+* [Sample in HTML Table format](/datos.html)
+* [Sample in Plain Text (TXT) format](/datos.txt)
 
 ## RSS Feed
 This is PokeBuild Champions's feed watched from a feed reader:

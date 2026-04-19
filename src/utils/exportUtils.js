@@ -1,51 +1,75 @@
-export const exportToJSON = (data) => {
-  const jsonString = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(data, null, 2))}`;
+import * as XLSX from 'xlsx';
+
+const formatForSheet = (data) => {
+  return data.map(item => {
+    const formatted = { ...item };
+    for (let key in formatted) {
+      if (Array.isArray(formatted[key])) {
+        formatted[key] = formatted[key].join('|');
+      }
+    }
+    return formatted;
+  });
+};
+
+const downloadFile = (blob, fileName) => {
   const link = document.createElement("a");
-  link.href = jsonString;
-  link.download = "pokemon_builds.json";
+  link.href = URL.createObjectURL(blob);
+  link.download = fileName;
   link.click();
+  URL.revokeObjectURL(link.href);
+};
+
+export const exportToJSON = (data) => {
+  if (!data || data.length === 0) return;
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  downloadFile(blob, 'pokemon_builds.json');
 };
 
 export const exportToCSV = (data) => {
   if (!data || data.length === 0) return;
   const headers = Object.keys(data[0]).join(",");
   const rows = data.map(obj => {
-    return Object.entries(obj)
-      .map(([key, value]) => {
-        if (Array.isArray(value)) {
-          return `"${value.join('|')}"`;
-        }
-        return `"${value}"`;
-      })
-      .join(",");
+    return Object.values(obj).map(val => Array.isArray(val) ? `"${val.join('|')}"` : `"${val}"`).join(",");
   }).join("\n");
-  const csvString = `${headers}\n${rows}`;
-  const link = document.createElement("a");
-  link.href = `data:text/csv;charset=utf-8,${encodeURIComponent(csvString)}`;
-  link.download = "pokemon_builds.csv";
-  link.click();
+  const blob = new Blob([`${headers}\n${rows}`], { type: 'text/csv' });
+  downloadFile(blob, 'pokemon_builds.csv');
+};
+
+export const exportToTSV = (data) => {
+  if (!data || data.length === 0) return;
+  const headers = Object.keys(data[0]).join("\t");
+  const rows = data.map(obj => {
+    return Object.values(obj).map(val => Array.isArray(val) ? `${val.join('|')}` : `${val}`).join("\t");
+  }).join("\n");
+  const blob = new Blob([`${headers}\n${rows}`], { type: 'text/tab-separated-values' });
+  downloadFile(blob, 'pokemon_builds.tsv');
 };
 
 export const exportToXML = (data) => {
-  let xmlString = '<?xml version="1.0" encoding="UTF-8"?><builds>';
+  if (!data || data.length === 0) return;
+  let xml = '<?xml version="1.0" encoding="UTF-8"?><builds>';
   data.forEach(item => {
-    xmlString += '<build>';
+    xml += '<build>';
     for (let key in item) {
       if (Array.isArray(item[key])) {
-        xmlString += `<${key}>`;
-        item[key].forEach(val => {
-          xmlString += `<move>${val}</move>`;
-        });
-        xmlString += `</${key}>`;
+        xml += `<${key}>${item[key].map(m => `<move>${m}</move>`).join('')}</${key}>`;
       } else {
-        xmlString += `<${key}>${item[key]}</${key}>`;
+        xml += `<${key}>${item[key]}</${key}>`;
       }
     }
-    xmlString += '</build>';
+    xml += '</build>';
   });
-  xmlString += '</builds>';
-  const link = document.createElement("a");
-  link.href = `data:text/xml;charset=utf-8,${encodeURIComponent(xmlString)}`;
-  link.download = "pokemon_builds.xml";
-  link.click();
+  xml += '</builds>';
+  const blob = new Blob([xml], { type: 'text/xml' });
+  downloadFile(blob, 'pokemon_builds.xml');
+};
+
+export const exportToSheetJS = (data, extension) => {
+  if (!data || data.length === 0) return;
+  const cleanData = formatForSheet(data);
+  const ws = XLSX.utils.json_to_sheet(cleanData);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "Builds");
+  XLSX.writeFile(wb, `pokemon_builds.${extension}`);
 };
